@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colchones</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="./img/colchonsencillo.png">
+</head>
+
+<body>
+
+    <div class="menu" style="z-index: 100">
+        <nav>
+            <ul>
+                <li><a href="./contactanos.html">Contactanos</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./ingresars.html">Ingresar</a></li>
+                <li><a href="./registrar.html">Registrarse</a></li>
+                <li><a href="./index.html">Inicio</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <hr>
+
+    <header>
+        <div class="mio">
+            <img src="./img/Logo.png" alt="" height="220" width="520">
+        </div>
+
+
+        <video autoplay loop id="video-background" muted>
+            <source src="./vid/backgraund.mp4" type="video/mp4">
+        </video>
+    </header>
+
+
+    <div class="contenedor">
+
+        <figure>
+            <img src="./img/colchonsencillo.png">
+            <div class="capa">
+                <h3>Colchon Sencillo</h3>
+                <p>Los colchones sencillos tienen las medidas más reducidas que facilitan que se
+                    adapte a espacios pequeños dentro de una habitación o cuando los utilizamos para
+                    que los visitantes puedan quedarse a dormir en nuestra casa. Incluso puede ajustarse a un sofá.</p>
+            </div>
+        </figure>
+
+        <figure>
+            <img src="./img/colchondoble.png" style="padding-left: 15px">
+            <div class="capa">
+                <h3>Colchon Doble</h3>
+                <p>El Colchón Top Doble es lo que estás buscando. Así podrás garantizar
+                    noches 100% reconfortantes y placenteras.
+                    Está fabricado con excelentes materiales para que puedas recostarte y tener la máxima relajación
+                    luego de un
+                    largo día. Tiene tela Jaquard con alto contenido de algodón y tratamiento
+                    AD para evitar ácaros, hongos y bacterias.</p>
+            </div>
+        </figure>
+
+        <figure>
+            <img src="./img/queen.png" style="padding-left: 15px">
+            <div class="capa">
+                <h3>Queen</h3>
+                <p>Da un soporte adecuado al cuerpo y garantiza la amortiguación homogenea de los movimientos al dormir.
+                    Gracias a su tela con alto contenido de algodón
+                    experimentaras una mayor sensación de frescura. Sus refuerzos laterales evitan la deformación del
+                    colchón.</p>
+            </div>
+        </figure>
+
+        <figure>
+            <img src="./img/colchondoble.png" style="padding-left: 15px">
+            <div class="capa">
+                <h3>King</h3>
+                <p>Con sistema de confort exclusivo que ofrece una sensación de descanso y relajación mientras disminuye
+                    los puntos de presión, tela tejido de punto con tratamiento que repele líquidos y manchas,
+                    con una combinación de espumas de diferentes densidades que se adaptan de mejor manera a las
+                    curvaturas del cuerpo.</p>
+            </div>
+        </figure>
+    </div>
+
+
+
+    <div class="checkbox8">
+        <input type="checkbox" name="$1.800.000" id="checkbox8">
+        <label for="checkbox8">$1.800.000</label>
+    </div>
+    <div class="checkbox9">
+        <input type="checkbox" name="$1.000.000" id="checkbox9">
+        <label for="checkbox9">$1.000.000</label>
+    </div>
+    <div class="checkbox10">
+        <input type="checkbox" name="$2.200.000" id="checkbox10">
+        <label for="checkbox1">$2.200.000</label>
+    </div>
+    <div class="checkbox11">
+        <input type="checkbox" name="$2.800.000" id="checkbox11">
+        <label for="checkbox11">$2.800.000</label>
+    </div>
+
+</div>
+    <form action="" class="sumatoria">
+
+        <input type="checkbox" id="precio8" precio="1800000"> 
+        <input type="checkbox" id="precio9" precio="1000000">
+        <input type="checkbox" id="precio10" precio="2200000">
+        <input type="checkbox" id="precio11" precio="2800000">
+        <input type="button" value="Pagar" onclick="calcularPrecio()">
+
+        <script>
+
+            var suma = function (checkbox8, checkbox9, checkbox10, checkbox11) {
+                var checkbox8 = parseFloat(document.getElementById('checkbox8').value);
+                var checkbox9 = parseFloat(document.getElementById('checkbox9').value);
+                var checkbox10 = parseFloat(document.getElementById('checkbox10').value);
+                var checkbox11 = parseFloat(document.getElementById('checkbox11').value);
+
+                var resultado = checkbox8+checkbox9+checkbox10+checkbox11;
+
+                return resultado;
+            }
+
+        </script>
+
+    </form>
+
+    <div class="redes">
+
+
+        <div class="you">
+            <nav>
+                <a href="./youtube.html">
+                    <img src="./img/icoyou.png" alt="" width="50" height="50">
+                </a>
+            </nav>
+        </div>
+
+        <div class="twi">
+            <nav>
+                <a href="./twitter.html">
+                    <img src="./img/icotwi.png" alt="" width="50" height="50">
+                </a>
+            </nav>
+        </div>
+
+        <div class="inst">
+            <nav>
+                <a href="./Instagram.html">
+                    <img src="./img/icoins.png" alt="" width="50" height="50">
+                </a>
+            </nav>
+        </div>
+        <div class="face">
+            <nav>
+                <a href="./facebook.html">
+                    <img src="./img/icoface.png" alt="" width="50" height="50">
+                </a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+<script>
+
+function calcularPrecio(){
+    var precio8 = document.getElementById ('precio8').getAttribute ('precio');
+    var precio9 = document.getElementById ('precio9').getAttribute ('precio');
+    var precio10 = document.getElementById ('precio10').getAttribute ('precio');
+    var precio11 = document.getElementById ('precio11').getAttribute ('precio');
+
+var resultado=0;
+if(document.getElementById('precio8').checked){
+    var resultado = parseInt (resultado) +parseInt (precio8)
+}
+if(document.getElementById('precio9').checked){
+    var resultado = parseInt (resultado) +parseInt (precio9)
+}
+if(document.getElementById('precio10').checked){
+    var resultado = parseInt (resultado) +parseInt (precio10)
+}
+if(document.getElementById('precio11').checked){
+    var resultado = parseInt (resultado) +parseInt (precio11)
+}
+
+
+alert(resultado);
+}
+
+</script>
+
+
+
+</body>
+</html>

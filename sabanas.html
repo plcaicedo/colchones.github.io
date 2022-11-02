@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabanas</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="./img/sabanasdobles.png">
+</head>
+
+<body>
+
+    <div class="menu" style="z-index: 100">
+        <nav>
+            <ul>
+                <li><a href="./contactanos.html">Contactanos</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./ingresars.html">Ingresar</a></li>
+                <li><a href="./registrar.html">Registrarse</a></li>
+                <li><a href="./index.html">Inicio</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <hr>
+
+    <header>
+        <div class="mio">
+            <img src="./img/Logo.png" alt="" height="220" width="520">
+        </div>
+
+
+        <video autoplay loop id="video-background" muted>
+            <source src="./vid/backgraund.mp4" type="video/mp4">
+        </video>
+    </header>
+
+
+    <div class="contenedor">
+
+        <figure>
+            <img src="./img/sabanasencilla.png">
+            <div class="capa">
+                <h3>Sabanas Sencillas</h3>
+                <p>Los colchones sencillos tienen las medidas más reducidas que facilitan que se
+                    adapte a espacios pequeños dentro de una habitación o cuando los utilizamos para
+                    que los visitantes puedan quedarse a dormir en nuestra casa. Incluso puede ajustarse a un sofá.</p>
+            </div>
+        </figure>
+
+        <figure>
+            <img src="./img/sabanasdobles.png" style="padding-left: 15px">
+            <div class="capa">
+                <h3>Sabanas Dobles</h3>
+                <p>El Colchón Top Doble es lo que estás buscando. Así podrás garantizar
+                    noches 100% reconfortantes y placenteras.
+                    Está fabricado con excelentes materiales para que puedas recostarte y tener la máxima relajación
+                    luego de un
+                    largo día. Tiene tela Jaquard con alto contenido de algodón y tratamiento
+                    AD para evitar ácaros, hongos y bacterias.</p>
+            </div>
+        </figure>
+
+        <figure>
+            <img src="./img/sabanasqueen.png" style="padding-left: 15px">
+            <div class="capa">
+                <h3>Sabanas Queen</h3>
+                <p>Da un soporte adecuado al cuerpo y garantiza la amortiguación homogenea de los movimientos al dormir.
+                    Gracias a su tela con alto contenido de algodón
+                    experimentaras una mayor sensación de frescura. Sus refuerzos laterales evitan la deformación del
+                    colchón.</p>
+            </div>
+        </figure>
+
+
+        <figure>
+            <img src="./img/sanabasking.png" style="padding-left: 15px">
+            <div class="capa">
+                <h3>Sabanas King</h3>
+                <p>Con sistema de confort exclusivo que ofrece una sensación de descanso y relajación mientras disminuye
+                    los puntos de presión, tela tejido de punto con tratamiento que repele líquidos y manchas,
+                    con una combinación de espumas de diferentes densidades que se adaptan de mejor manera a las
+                    curvaturas del cuerpo.</p>
+            </div>
+        </figure>
+    </div>
+
+    <div class="checkbox">
+        <input type="checkbox" name="$240.000" id="checkbox">
+        <label for="checkbox">$240.000</label>
+    </div>
+
+    <div class="checkbox1">
+        <input type="checkbox" name="$110.000" id="checkbox1">
+        <label for="checkbox1">$110.000</label>
+    </div>
+   
+    <div class="checkbox2">
+        <input type="checkbox" name="$290.000" id="checkbox2">
+        <label for="checkbox2">$290.000</label>
+    </div>
+    <div class="checkbox3">
+        <input type="checkbox" name="$320.000" id="checkbox3">
+        <label for="checkbox3">$320.000</label>
+    </div>
+</div>
+
+    <form action="" class="sumatoria">
+
+        <input type="checkbox" id="precio13" precio="240000">
+        <input type="checkbox" id="precio14" precio="110000">
+        <input type="checkbox" id="precio15" precio="290000">
+        <input type="checkbox" id="precio16" precio="320000">
+        <input type="button" value="Pagar" onclick="calcularPrecio()">
+
+    <script>
+
+    var suma = function (checkbox, checkbox1, checkbox2, checkbox3) {
+    var checkbox = parseFloat(document.getElementById('checkbox').value);
+    var checkbox1 = parseFloat(document.getElementById('checkbox1').value);
+    var checkbox2 = parseFloat(document.getElementById('checkbox2').value);
+    var checkbox3 = parseFloat(document.getElementById('checkbox3').value);
+
+    var resultado = checkbox + checkbox1 + checkbox2 + checkbox3;
+
+    return resultado;
+}
+
+</script>
+
+</form>
+
+<div class="redes">
+
+
+        <div class="you">
+            <nav>
+                <a href="./youtube.html">
+                    <img src="./img/icoyou.png" alt="" width="50" height="50">
+                </a>
+            </nav>
+        </div>
+
+
+        <div class="twi">
+            <nav>
+
+                <a href="./twitter.html">
+                    <img src="./img/icotwi.png" alt="" width="50" height="50">
+                </a>
+            </nav>
+        </div>
+
+        <div class="inst">
+            <nav>
+
+                <a href="./twitter.html">
+                    <img src="./img/icoins.png" alt="" width="50" height="50">
+                </a>
+            </nav>
+        </div>
+        <div class="face">
+            <nav>
+
+                <a href="./facebook.html">
+                    <img src="./img/icoface.png" alt="" width="50" height="50">
+                </a>
+            </nav>
+        </div>
+    </div>
+    </head>
+
+
+
+<script>
+
+function calcularPrecio(){
+var precio13 = document.getElementById('precio13').getAttribute('precio');
+var precio14 = document.getElementById('precio14').getAttribute('precio');
+var precio15 = document.getElementById('precio15').getAttribute('precio');
+var precio16 = document.getElementById('precio16').getAttribute('precio');
+        
+var resultado=0;
+
+if (document.getElementById('precio13').Checked){
+var resultado = parseInt(resultado) + parseInt(precio13)
+}
+            
+if (document.getElementById('precio14').Checked){
+ var resultado = parseInt(resultado) + parseInt(precio14)
+ }
+            
+if (document.getElementById('precio15').Checked){
+ var resultado = parseInt(resultado) + parseInt(precio15)
+}
+            
+if (document.getElementById('precio16').Checked){
+ var resultado = parseInt(resultado) + parseInt(precio16)
+ }
+alert(resultado);
+ }
+    </script>
+</body>
+</html>

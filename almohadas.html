@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almohadas</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="./img/azules.png">
+</head>
+
+<body>
+
+    <div class="menu" style="z-index: 100">
+        <nav>
+            <ul>
+                <li><a href="./contactanos.html">Contactanos</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./ingresars.html">Ingresar</a></li>
+                <li><a href="./registrar.html">Registrarse</a></li>
+                <li><a href="./index.html">Inicio</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <hr>
+
+    <header>
+        <div class="mio">
+            <img src="./img/Logo.png" alt="" height="220" width="520">
+        </div>
+
+
+        <video autoplay loop id="video-background" muted>
+            <source src="./vid/backgraund.mp4" type="video/mp4">
+        </video>
+    </header>
+
+
+    <div class="contenedor">
+
+        <figure>
+            <img src="./img/almohadanegra.png">
+            <div class="capa">
+                <h3>Negras</h3>
+                <p>Los colchones sencillos tienen las medidas más reducidas que facilitan que se
+                    adapte a espacios pequeños dentro de una habitación o cuando los utilizamos para
+                    que los visitantes puedan quedarse a dormir en nuestra casa. Incluso puede ajustarse a un sofá.</p>
+            </div>
+        </figure>
+
+        <figure>
+            <img src="./img/azules.png" style="padding-left: 15px">
+            <div class="capa">
+                <h3>Azules</h3>
+                <p>El Colchón Top Doble es lo que estás buscando. Así podrás garantizar
+                    noches 100% reconfortantes y placenteras.
+                    Está fabricado con excelentes materiales para que puedas recostarte y tener la máxima relajación
+                    luego de un
+                    largo día. Tiene tela Jaquard con alto contenido de algodón y tratamiento
+                    AD para evitar ácaros, hongos y bacterias.</p>
+            </div>
+        </figure>
+
+        <figure>
+            <img src="./img/blancas.png" style="padding-left: 15px">
+            <div class="capa">
+                <h3>Blancas</h3>
+                <p>Da un soporte adecuado al cuerpo y garantiza la amortiguación homogenea de los movimientos al dormir.
+                    Gracias a su tela con alto contenido de algodón
+                    experimentaras una mayor sensación de frescura. Sus refuerzos laterales evitan la deformación del
+                    colchón.</p>
+            </div>
+        </figure>
+    </div>
+
+    <div class="checkbox5">
+        <input type="checkbox" name="$60.000" id="checkbox5">
+        <label for="checkbox5">$60.000</label>
+    </div>
+    <div class="checkbox6">
+        <input type="checkbox" name="$130.000" id="checkbox6">
+        <label for="checkbox6">$130.000</label>
+    </div>
+    <div class="checkbox7">
+        <input type="checkbox" name="$100.000" id="checkbox7">
+        <label for="checkbox7">$100.000</label>
+    </div>    
+
+</div>
+
+<form action="" class="sumatoria">
+
+    <input type="checkbox" id="precio1" precio="60000"> 
+    <input type="checkbox" id="precio2" precio="130000">
+    <input type="checkbox" id="precio3" precio="100000">
+   
+    <input type="button" value="Pagar" onclick="calcularPrecio()">
+
+    <script>
+
+        var suma = function (checkbox5, checkbox6, checkbox7) {
+            var checkbox5 = parseFloat(document.getElementById('checkbox5').value);
+            var checkbox6 = parseFloat(document.getElementById('checkbox6').value);
+            var checkbox7 = parseFloat(document.getElementById('checkbox7').value);
+
+            var resultado = checkbox5+checkbox6+checkbox7;
+
+            return resultado;
+        }
+
+    </script>
+
+</form>
+     
+
+    <div class="redes">
+
+
+        <div class="you">
+            <nav>
+
+                <a href="./youtube.html">
+                    <img src="./img/icoyou.png" alt="" width="50" height="50">
+                </a>
+            </nav>
+        </div>
+
+
+        <div class="twi">
+            <nav>
+
+                <a href="./twitter.html">
+                    <img src="./img/icotwi.png" alt="" width="50" height="50">
+                </a>
+            </nav>
+        </div>
+
+        <div class="inst">
+            <nav>
+
+                <a href="./Instagram.html">
+                    <img src="./img/icoins.png" alt="" width="50" height="50">
+                </a>
+            </nav>
+        </div>
+        <div class="face">
+            <nav>
+
+                <a href="./facebook.html">
+                    <img src="./img/icoface.png" alt="" width="50" height="50">
+                </a>
+            </nav>
+        </div>
+    </div>
+</head>
+
+
+    <script>
+
+        function calcularPrecio(){           
+            var precio1 = document.getElementById ('precio1').getAttribute ('precio');
+            var precio2 = document.getElementById ('precio2').getAttribute ('precio');
+            var precio3 = document.getElementById ('precio3').getAttribute ('precio');
+        
+        var resultado=0;
+        if(document.getElementById('precio1').checked){
+            var resultado = parseInt (resultado) +parseInt (precio1)
+        }
+        if(document.getElementById('precio2').checked){
+            var resultado = parseInt (resultado) +parseInt (precio2)
+        }
+        if(document.getElementById('precio3').checked){
+            var resultado = parseInt (resultado) +parseInt (precio3)
+        }
+                
+        
+        alert(resultado);
+        }
+        
+        </script>
+   
+
+</body>
+
+</html>
